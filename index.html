@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cookware</title>
+    <style>
+      body {
+        background-color: rgb(222, 241, 184);
+      }
+
+      h1 {
+        text-align: center;
+        color: rgb(112, 109, 110);
+        font-size: 48px;
+        font-weight: 280;
+      }
+
+      h2 {
+        text-align: center;
+        font-size: 30px;
+        border: 1px solid rgb(112, 109, 110);
+        padding: 20px;
+        border-radius: 10px;
+        line-height: 1.5;
+        color: blue;
+      }
+      .footer {
+        text-align: center;
+        font-weight: 150;
+        font-style: oblique;
+      }
+
+      img {
+        margin: 0 auto;
+        display: block;
+        max-width: 50%;
+      }
+      button {
+        display: block;
+        color: white;
+        margin: 20px auto;
+        border-radius: 4px;
+        border: 1px solid green;
+        font-weight: 100px;
+        background-color: orangered;
+        padding: 20px 30px;
+        font-size: 18px;
+        box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+        text-decoration: none;
+      }
+      button:hover {
+        cursor: pointer;
+        opacity: 0.9;
+      }
+      .learn-more {
+        display: block;
+        margin-top: 10px;
+        text-decoration: none;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 25px 60px;
+      }
+
+      p {
+        line-height: 1.5;
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Kitchen Utensils</h1>
+      <h2>🍜 Cooking Is My Hobby</h2>
+      <img
+        src="https://images.homedepot-static.com/productImages/a17027b8-eb71-4c44-99ab-e48af3bb342e/svn/red-kaluns-spatulas-k-stsr8-hd-64_400.webp"
+        alt="Kitchen Utensils"
+      />
+      <p>
+        A kitchen utensil is a small hand held tool used for food preparation.
+        Common kitchen tasks include cutting food items to size, heating food on
+        an open fire or on a stove, baking, grinding, mixing, blending, and
+        measuring; different utensils are made for each task. A general purpose
+        utensil such as a chef's knife may be used for a variety of foods; other
+        kitchen utensils are highly specialized and may be used only in
+        connection with preparation of a particular type of food, such as an egg
+        separator or an apple corer.
+        <br />
+        <a
+          href="https://en.wikipedia.org/wiki/Kitchen_utensil"
+          target="_blank"
+          class="learn-more"
+        >
+          Learn more on Wikipedia
+        </a>
+      </p>
+      <p>
+        Write the First Review
+        <br />
+        ⭐⭐⭐⭐⭐
+      </p>
+
+      <button class="cart-button">
+        <strong> 🛒 Add to Cart </strong>
+      </button>
+      <p class="footer">This page was built by Anu Adeyemi</p>
+    </div>
+    <script>
+      function cart() {
+        let name = prompt("What is your name?");
+        let utensil = prompt("What's your favorite kitchen utensil?");
+
+        alert(
+          "👏👏 Awesome " +
+            name +
+            "! Grab a set of Kitchen Utensils on your next visit!"
+        );
+      }
+      let cartButton = document.querySelector(".cart-button");
+      cartButton.addEventListener("click", cart);
+    </script>
+  </body>
+</html>
