@@ -4,74 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Cookware</title>
-    <style>
-      body {
-        background-color: rgb(222, 241, 184);
-      }
-
-      h1 {
-        text-align: center;
-        color: rgb(112, 109, 110);
-        font-size: 48px;
-        font-weight: 280;
-      }
-
-      h2 {
-        text-align: center;
-        font-size: 30px;
-        border: 1px solid rgb(112, 109, 110);
-        padding: 20px;
-        border-radius: 10px;
-        line-height: 1.5;
-        color: blue;
-      }
-      .footer {
-        text-align: center;
-        font-weight: 150;
-        font-style: oblique;
-      }
-
-      img {
-        margin: 0 auto;
-        display: block;
-        max-width: 50%;
-      }
-      button {
-        display: block;
-        color: white;
-        margin: 20px auto;
-        border-radius: 4px;
-        border: 1px solid green;
-        font-weight: 100px;
-        background-color: orangered;
-        padding: 20px 30px;
-        font-size: 18px;
-        box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.3);
-        transition: all 200ms ease-in-out;
-        text-decoration: none;
-      }
-      button:hover {
-        cursor: pointer;
-        opacity: 0.9;
-      }
-      .learn-more {
-        display: block;
-        margin-top: 10px;
-        text-decoration: none;
-      }
-      .container {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 25px 60px;
-      }
-
-      p {
-        line-height: 1.5;
-        font-size: 16px;
-        font-family: Arial, Helvetica, sans-serif;
-      }
-    </style>
   </head>
   <body>
     <div class="container">
@@ -110,19 +44,6 @@
       </button>
       <p class="footer">This page was built by Anu Adeyemi</p>
     </div>
-    <script>
-      function cart() {
-        let name = prompt("What is your name?");
-        let utensil = prompt("What's your favorite kitchen utensil?");
-
-        alert(
-          "👏👏 Awesome " +
-            name +
-            "! Grab a set of Kitchen Utensils on your next visit!"
-        );
-      }
-      let cartButton = document.querySelector(".cart-button");
-      cartButton.addEventListener("click", cart);
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
